@@ -1,18 +1,55 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+
+            <div class="tweets">
+                <div class="container">
+                <?php dynamic_sidebar('sidebar-twitter'); ?>
+                        </div>
+            </div>
+
+			<footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="inner">
+                                <h4>About Continental Resources</h4>
+                                <hr>
+                                <p>
+                                    Businesses, higher education and government organizations rely on Continental Resources (ConRes) for high technology products, services and support - from complete IT infrastructure and data
+                                    center solutions,
+                                    to test instrument sales and rentals, to building OEM/embedded computing devices.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="inner">
+                                <ul class="slist">
+                                    <li><a href="/">Corporate</a></li>
+                                    <li><a href="/it-products-solutions">IT Products & Solutions</a></li>
+                                    <li><a href="/oem-embedded-computers">OEM/Embedded Computing</a></li>
+                                    <li><a href="/test-equipment">Test Equipment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="inner">
+                                <ul class="slist">
+                                    <li><a href="/test-equipment-local-contacts">Contact us</a></li>
+                                    <li><a href="/careers">Careers with Conres</a></li>
+                                    <li><a href="/conres-privacy-pollicy">Privacy</a></li>
+                                    <li><a href="/conres-terms-and-conditions">Terms</a></li>
+                                    <li><a href="/site-map">sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footNote">
+                        © 2013 Continental Resources | (800) 937-4688
+                    </div>
+                </div>
 
 			</footer>
 			<!-- /footer -->
-
-		</div>
-		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
 
