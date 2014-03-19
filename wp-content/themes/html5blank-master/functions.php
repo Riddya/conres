@@ -235,6 +235,16 @@ if (function_exists('register_sidebar'))
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+
+
+    register_sidebar(array(
+        'name' => __('Twitter', 'html5blank'),
+        'id' => 'sidebar-twitter',
+        'before_widget' => '<div class="inner">',
+        'after_widget' => '</div>',
+        'before_title' => '<h6 style="display: none">',
+        'after_title' => '</h6>',
+    ));
 }
 
 // Remove wp_head() injected Recent Comment styles
