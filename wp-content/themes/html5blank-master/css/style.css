@@ -8204,7 +8204,7 @@ h2 + .post-box {
   padding-right: 18px;
 }
 .resource_list table .active-filters .filter:after {
-  content: '×';
+  content: '?';
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -8982,5 +8982,5 @@ body.test-division .readMore {
 @media (max-width: 480px) {
   .post-box > .media > .pull-left {
     float: none !important;
-  }
+	}
 }
