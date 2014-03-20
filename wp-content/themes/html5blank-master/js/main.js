@@ -341,7 +341,7 @@ jQuery(document).ready(function () {
 
 
     // show submenu list on hover
-    jQuery(".megamenu > li > div .dropdown_container ul > li.sub-dropdown > a").click(function () {
+    jQuery(".megamenu > li > div .dropdown_container ul > li.menu-item-has-children > a").click(function () {
         jQuery(".megamenu ul").removeClass("current");
         var $current = jQuery(this).closest("ul")
         $current.addClass("current");
@@ -352,10 +352,10 @@ jQuery(document).ready(function () {
         // var $others = jQuery(".megamenu li.sub-dropdown ul:not(.current)")
 
         // hide submenus in this section
-        var $others = $current.closest(".inner").find("li.sub-dropdown ul:not(.current)");
+        var $others = $current.closest(".inner").find("li.menu-item-has-children ul:not(.current)");
 
         $others.fadeOut(200);
-        $others.closest("li.sub-dropdown").removeClass("open");
+        $others.closest("li.menu-item-has-children").removeClass("open");
         var $next = jQuery(this).next("ul");
 
         // adjust height
@@ -380,7 +380,7 @@ jQuery(document).ready(function () {
         }
 
 
-        $next.closest("li.sub-dropdown").addClass("open");
+        $next.closest("li.menu-item-has-children").addClass("open");
 
         return false;
     });

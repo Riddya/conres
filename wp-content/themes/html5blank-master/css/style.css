@@ -6037,7 +6037,7 @@ p {
   font-size: 14px;
   padding: 5px 12px 5px 18px;
 }
-.megamenu > li > div .dropdown_container .inner > ul > li.sub-dropdown {
+/*.megamenu > li > div .dropdown_container .inner > ul > li.sub-dropdown {
   padding-right: 20px;
 }
 .megamenu > li > div .dropdown_container .inner > ul > li.sub-dropdown > a {
@@ -6045,6 +6045,15 @@ p {
 }
 .megamenu > li > div .dropdown_container .inner > ul ul > li.sub-dropdown > a {
   background: transparent url("../images/subdrop-level2.png") no-repeat right 6px;
+}*/
+.megamenu > li > div .dropdown_container .inner > ul > li.menu-item-has-children {
+	padding-right: 20px;
+}
+.megamenu > li > div .dropdown_container .inner > ul > li.menu-item-has-children > a {
+	background: transparent url("../images/subdrop-level1.png") no-repeat right 7px;
+}
+.megamenu > li > div .dropdown_container .inner > ul ul > li.menu-item-has-children > a {
+	background: transparent url("../images/subdrop-level2.png") no-repeat right 6px;
 }
 .megamenu > li > div .dropdown_container ul {
   display: inline-block;
