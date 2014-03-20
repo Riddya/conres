@@ -502,4 +502,23 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+function get_class_body() {
+    $blogId = get_current_blog_id();
+
+    switch ($blogId) {
+        case 2:
+            $bodyClass = 'it-division';
+            break;
+        case 3:
+            $bodyClass = 'oem-division';
+            break;
+        case 4:
+            $bodyClass = 'test-division';
+            break;
+        default: $bodyClass = '';
+    }
+
+    return $bodyClass;
+}
+
 ?>

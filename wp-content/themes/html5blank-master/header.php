@@ -23,7 +23,7 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class(get_class_body()); ?>>
 		<!-- wrapper -->
 		<nav class="navbar navbar-default navbar-static-top" role="navigation">
 		<div class="container">
