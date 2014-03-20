@@ -8,6 +8,9 @@
     </div>
 </div>
 
+
+
+
 <footer>
     <div class="container">
         <div class="row">
@@ -26,10 +29,14 @@
             <div class="col-md-2">
                 <div class="inner">
                     <ul class="slist">
-                        <li><a href="/">Corporate</a></li>
-                        <li><a href="/it-products-solutions">IT Products & Solutions</a></li>
-                        <li><a href="/oem-embedded-computers">OEM/Embedded Computing</a></li>
-                        <li><a href="/test-equipment">Test Equipment</a></li>
+                        <?php
+                        $sites = wp_get_sites();
+
+                        foreach ($sites as $site) {
+                            $details = get_blog_details($site['blog_id']);
+                            echo '<li><a href="' . $details->siteurl . '">' . $details->blogname . '</a></li>';
+                        };
+                        ?>
                     </ul>
                 </div>
             </div>

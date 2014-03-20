@@ -6884,6 +6884,7 @@ p {
 }
 .mainPageSlideshow {
   padding-bottom: 25px;
+    min-height: 400px;
 }
 .mainPageSlideshow p {
   color: #fff;
