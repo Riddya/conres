@@ -2,7 +2,7 @@
 
 <?php get_template_part( 'page', 'slideshow' ); ?>
 
-	<main role="main">
+<div class="container">
 		<!-- section -->
 		<section>
 
@@ -14,8 +14,8 @@
 
 		</section>
 		<!-- /section -->
-	</main>
+	</div>
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
