@@ -12,4 +12,6 @@ $(function() {
 		}
 	}
 
+        $('.tweets  ul').addClass('bxslider tickerSlider');
+        $('.tweets ul li').wrapInner("<div class='singleTicket'></div>");
 });

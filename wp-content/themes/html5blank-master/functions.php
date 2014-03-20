@@ -242,8 +242,8 @@ if (function_exists('register_sidebar'))
         'id' => 'sidebar-twitter',
         'before_widget' => '<div class="inner">',
         'after_widget' => '</div>',
-        'before_title' => '<h6 style="display: none">',
-        'after_title' => '</h6>',
+        'before_title' => '<strong class="title-tweets">',
+        'after_title' => '</strong>',
     ));
 }
 

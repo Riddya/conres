@@ -7149,7 +7149,7 @@ hr {
   padding: 14px 0;
 }
 .tweets {
-  display: none;
+  /*display: none;*/
   margin: 25px 0 0 0;
   background: #007dc3;
   color: #fff;
@@ -7172,6 +7172,15 @@ hr {
   position: absolute;
   right: 10px;
   top: 14px;
+}
+.tweets .title-tweets {
+  float: left;
+    line-height: 15px;
+    padding: 14px;
+}
+.tweets li {
+    position: absolute;
+    left: -9999;
 }
 .bx-wrapper .bx-viewport {
   -webkit-box-shadow: none;
