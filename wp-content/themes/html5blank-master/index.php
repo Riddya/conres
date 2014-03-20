@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_template_part( 'page', 'slideshow' ); ?>
+
 	<main role="main">
 		<!-- section -->
 		<section>
