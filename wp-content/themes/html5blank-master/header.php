@@ -111,6 +111,7 @@
 									<div class="inner">
 										<?php wp_nav_menu(array('menu'=>'Main menu','items_wrap'=>'<ul>%3$s</ul>')); ?>
 									</div>
+									<?php dynamic_sidebar('widget-area-2'); ?>
 								</div>
 							</div>
 						</li>
